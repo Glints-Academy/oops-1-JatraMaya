@@ -16,6 +16,8 @@ public class Teacher extends Person {
 	// Method addCourse (Return false if course already exist)
 	public boolean addCourse(String course) {
 		boolean success = true;
+
+		// Add new course if Courses Array is empty
 		if (courses.size() == 0) {
 			courses.add(course);
 		} else {
