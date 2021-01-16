@@ -2,6 +2,15 @@ public class Main {
 
 	public static void main(String[] args) {
 		
+		//Example of Person class usage
+		System.out.println("Usage of Person class"); // For console formatting
+		Person person1 = new Person("Sherlock Holmes", "Paddington Road 103A"); // Crating new Person object.
+		System.out.println(person1.getName()); // Calling getName method.
+		System.out.println(person1.getAddress()); // Calling getAddress method.
+		person1.setAddress("Baker Street 221B, London"); //Calling setAddress method.
+		System.out.println(person1.toString()); // Calling toString() method.
+		System.out.println("\n"); //For console formatting.
+		
 		//Example of Student class usage
 		System.out.println("Usage of class Student"); // For console formatting
 		
