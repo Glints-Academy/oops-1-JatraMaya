@@ -55,6 +55,6 @@ public class Student extends Person {
 	}
 
 	public String toString() {
-		return "\"Student: " + name + "(" + address + ")";
+		return "\"Student: " + name + "(" + address + ")\"";
 	}
 }
