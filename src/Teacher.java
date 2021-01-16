@@ -24,13 +24,11 @@ public class Teacher extends Person {
 			for (int i = 0; i < courses.size(); i++) {
 				if (courses.get(i) == course) {
 					success = false;
-
 				} else {
 					courses.add(course);
 				}
 			}
 		}
-
 		return success;
 	}
 
@@ -47,8 +45,6 @@ public class Teacher extends Person {
 	}
 
 	public String toString() {
-
 		return "\"Teacher: " + name + "(" + address + ")\"";
 	}
-
 }

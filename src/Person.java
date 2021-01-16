@@ -9,7 +9,7 @@ public class Person {
 	}
 
 	// List of methods
-
+	
 	protected String getName() {
 		return name;
 	}
