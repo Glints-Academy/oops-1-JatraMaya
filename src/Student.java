@@ -49,7 +49,8 @@ public class Student extends Person {
 		gradeAverage = gradeSum / numCourse;
 		return gradeAverage;
 	}
-
+    
+    // Applying polymorphism into toString method from Person (superclass) to Student (subclass)
 	public String toString() {
 		return "\"Student: " + name + "(" + address + ")\"";
 	}
