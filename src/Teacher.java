@@ -18,14 +18,16 @@ public class Teacher extends Person {
 		boolean success = true;
 
 		// Add new course if Courses Array is empty
-		if (courses.size() == 0) {
+		if (numCourse == 0) {
 			courses.add(course);
+            numCourse++;
 		} else {
-			for (int i = 0; i < courses.size(); i++) {
+			for (int i = 0; i < numCourse ; i++) {
 				if (courses.get(i) == course) {
 					success = false;
 				} else {
 					courses.add(course);
+                    numCourse++;
 				}
 			}
 		}
@@ -35,9 +37,10 @@ public class Teacher extends Person {
 	// Method removeCourse (return false if course does not exist)
 	public boolean removeCourse(String course) {
 		boolean success = false;
-		for (int i = 0; i < courses.size(); i++) {
+		for (int i = 0; i < numCourse ; i++) {
 			if (!(courses.get(i) == null)) {
 				courses.remove(i);
+                numCourse--;
 				success = true;
 			}
 		}
