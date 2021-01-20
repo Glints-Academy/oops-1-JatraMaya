@@ -51,7 +51,8 @@ public class Student extends Person {
 	}
     
     // Applying polymorphism into toString method from Person (superclass) to Student (subclass)
-	public String toString() {
-		return "\"Student: " + name + "(" + address + ")\"";
+	public String toString(String role) {
+		return "\"" + role + ": " + name + "(" + address + ")\"";
+//		return "\"+ role + ": " + name + "(" + address + ")\"";
 	}
 }
