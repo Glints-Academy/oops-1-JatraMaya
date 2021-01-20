@@ -19,8 +19,11 @@ public class Main {
 		student1.addCourseGrade("History", 5);
 		student1.printGrades(); // Will return list of course and grade for the course and will return "(Student name) don't have any grade yet if no course/grade added.
 		System.out.println(student1.getName() + " have an average grade of: " + student1.getAverageGrade());
+        
+        // Example of method overriding 
 		System.out.println(student1); // Student.toString() method called.
-		System.out.println("\n"); // For console formatting
+		
+        System.out.println("\n"); // For console formatting
 
 		// Example of Teacher class usage
 		System.out.println("Usage of class Teacher");
@@ -29,6 +32,8 @@ public class Main {
 		System.out.println(teacher1.addCourse("Math")); // Will return false as Course Math already exist.
 		System.out.println(teacher1.removeCourse("Math")); // Will return true as Course Math exist and can be removed.
 		System.out.println(teacher1.removeCourse("Math")); // Will return false as Course Math no longer exist to be removed.
+
+        // Example of method overriding 
 		System.out.println(teacher1); // Teacher.toString() method called.
 	}
 }
