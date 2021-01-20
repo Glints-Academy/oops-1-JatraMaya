@@ -20,8 +20,8 @@ public class Main {
 		student1.printGrades(); // Will return list of course and grade for the course and will return "(Student name) don't have any grade yet if no course/grade added.
 		System.out.println(student1.getName() + " have an average grade of: " + student1.getAverageGrade());
         
-        // Example of method overriding 
-		System.out.println(student1); // Student.toString() method called.
+        // Example of method overloading, adding new String parameter to toString method
+		System.out.println(student1.toString("Student")); // Student.toString() method called. 
 		
         System.out.println("\n"); // For console formatting
 
